@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Exercice Formulaire</title>
+</head>
+
+<body>
+  <h1>Création de compte</h1>
+  <form action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug"
+    method="POST">
+    <fieldset>
+      <legend>Choisissez un identifiant</legend>
+      <label>Identifiant
+        <!--<input id="identifiant" type="text" pattern="^[A-Za-z]..*$" min=4 max=12 required/> -->
+        <input name="identifiant" id="identifiant" required />
+      </label>
+      <p id="helpId">doit comporter entre 4 et 12 lettres</p>
+    </fieldset>
+    <fieldset>
+      <legend>Quel est votre âge ?</legend>
+      <label>Age
+         <input name="age" id="age" type="number" required />
+      </label>
+      <p id="helpAge">vous devez être majeur·e</p>
+    </fieldset>
+    <fieldset>
+      <legend>Choisissez un mot de passe</legend>
+      <label>Mot de passe
+        <input name= "mdp1" id="mdp1" required />
+      </label>
+      <p id="helpMdp1">au moins 8 caractères avec une minuscule et un chiffre</p>
+    </fieldset>
+    <fieldset>
+      <legend>Vérification du mot de passe</legend>
+      <label>Mot de passe
+        <input name="mdp2" id="mdp2" required />
+      </label>
+      <p id="helpMdp2">doit être identique au précédent</p>
+    </fieldset>
+    <button>Envoyer</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

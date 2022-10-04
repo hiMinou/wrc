@@ -1,0 +1,24 @@
+h1{
+  text-align: center;
+}
+
+fieldset{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: start;
+  height: 5rem;
+  gap: 0.5rem 0.2rem;
+  padding-bottom: 1rem;
+}
+
+p{
+  display: none;
+  margin: 0;
+}
+
+p.help{
+  font-weight: bold;
+  color: red;
+  display: block;
+}
